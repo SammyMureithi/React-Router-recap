@@ -9,6 +9,7 @@ import Products from './Components/Products';
 import NewProducts from './NewProducts';
 import Featured from './Featured';
 import Users from './Components/Users';
+import DynamicRoute from './DynamicRoute';
 
 function App() {
   return (
@@ -24,9 +25,8 @@ function App() {
           <Route path='featured' element={<Featured />} />
           <Route path='new' element={<NewProducts />} />
         </Route>
-        <Route path='user' element={<Users />}>
-          
-        </Route>
+        <Route path='user' element={<Users />}/>
+          <Route path='user/:userId' element={<DynamicRoute/>}/>
     </Routes>
     </div>
   );
