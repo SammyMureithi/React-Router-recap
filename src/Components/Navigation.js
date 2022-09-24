@@ -9,6 +9,7 @@ function Navigation() {
               <NavLink to={"/about"}>About</NavLink>
         <NavLink to={"/products"}>Products</NavLink>
         <NavLink to={"user"}>Users</NavLink>
+        <NavLink to={'seachParam'}>SeachParam</NavLink>
           </nav>
     </div>
   )

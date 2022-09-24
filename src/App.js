@@ -10,6 +10,7 @@ import NewProducts from './NewProducts';
 import Featured from './Featured';
 import Users from './Components/Users';
 import DynamicRoute from './DynamicRoute';
+import SearchParam from './SearchParam';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
           <Route path='new' element={<NewProducts />} />
         </Route>
         <Route path='user' element={<Users />}/>
-          <Route path='user/:userId' element={<DynamicRoute/>}/>
+        <Route path='user/:userId' element={<DynamicRoute />} />
+        <Route path='seachParam' element={<SearchParam/>}/>
     </Routes>
     </div>
   );
